@@ -9,12 +9,12 @@
 
 目录：
 
-1、LYPlayer：头文件
-2、LYPlayerConfiguration：一些配置宏定义
-3、LYPlayerModel：播放器参数模型
-4、LYPlayerView：播放器主体View
-5、LYPlayerControlView：播放器控制层
-6、LYPlayer.bundle：图片资源
+1、LYPlayer：头文件<br/>
+2、LYPlayerConfiguration：一些配置宏定义<br/>
+3、LYPlayerModel：播放器参数模型<br/>
+4、LYPlayerView：播放器主体View<br/>
+5、LYPlayerControlView：播放器控制层<br/>
+6、LYPlayer.bundle：图片资源<br/>
 
 #### 2、使用方法
 
