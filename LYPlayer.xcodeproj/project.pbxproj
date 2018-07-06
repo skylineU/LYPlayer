@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186E8E71582617B7ECFD29F5 /* libPods-LYPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5A7B619C0F27A3DAEC123D /* libPods-LYPlayer.a */; };
+		AE1D6D1A20EC9C260009B8E7 /* UIViewController+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D6D1920EC9C260009B8E7 /* UIViewController+Rotation.m */; };
+		AE1D6D1D20ECB4F20009B8E7 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D6D1C20ECB4F20009B8E7 /* UIView+Category.m */; };
+		AE51C23820A437BF00FE7535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE51C23620A437BF00FE7535 /* Main.storyboard */; };
+		AE51C23A20A437C100FE7535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE51C23920A437C100FE7535 /* Assets.xcassets */; };
+		AE51C23D20A437C100FE7535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE51C23B20A437C100FE7535 /* LaunchScreen.storyboard */; };
+		AE51C24920A4390E00FE7535 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE51C24820A4390E00FE7535 /* AppDelegate.m */; };
+		AE51C24D20A4391400FE7535 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE51C24B20A4391400FE7535 /* Info.plist */; };
+		AE51C24E20A4391400FE7535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE51C24C20A4391400FE7535 /* main.m */; };
+		AE51C25220A43B0700FE7535 /* UINavigationController+PopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = AE51C25120A43B0700FE7535 /* UINavigationController+PopGesture.m */; };
+		AE521F4420A9367D000EB31C /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE521F4320A9367D000EB31C /* MainTabBarViewController.m */; };
+		AE521F4B20A93AF6000EB31C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE521F4A20A93AF6000EB31C /* HomeViewController.m */; };
+		AE521F4E20A93B03000EB31C /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE521F4D20A93B03000EB31C /* DiscoverViewController.m */; };
+		AE521F5120A93B0C000EB31C /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE521F5020A93B0C000EB31C /* DownLoadViewController.m */; };
+		AE521F5320A93E1E000EB31C /* TabbarItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE521F5220A93E1E000EB31C /* TabbarItems.plist */; };
+		AE521F5920A95A98000EB31C /* LYPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE521F5820A95A98000EB31C /* LYPlayerView.m */; };
+		AE521F5C20A961B8000EB31C /* LYPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE521F5B20A961B8000EB31C /* LYPlayerModel.m */; };
+		AE521F5E20A964B6000EB31C /* LYPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE521F5D20A964B6000EB31C /* LYPlayer.bundle */; };
+		AE5769F220EB412000C494E3 /* LYPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5769F120EB412000C494E3 /* LYPlayerControlView.m */; };
+		AE5769F520EB7C1F00C494E3 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5769F420EB7C1F00C494E3 /* PlayerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D5A7B619C0F27A3DAEC123D /* libPods-LYPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1D6D1820EC9C260009B8E7 /* UIViewController+Rotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Rotation.h"; sourceTree = "<group>"; };
+		AE1D6D1920EC9C260009B8E7 /* UIViewController+Rotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Rotation.m"; sourceTree = "<group>"; };
+		AE1D6D1B20ECB4F20009B8E7 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		AE1D6D1C20ECB4F20009B8E7 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		AE51C22D20A437BF00FE7535 /* LYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE51C23720A437BF00FE7535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE51C23920A437C100FE7535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE51C23C20A437C100FE7535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE51C24720A4390E00FE7535 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE51C24820A4390E00FE7535 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE51C24B20A4391400FE7535 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE51C24C20A4391400FE7535 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE51C25020A43B0700FE7535 /* UINavigationController+PopGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PopGesture.h"; sourceTree = "<group>"; };
+		AE51C25120A43B0700FE7535 /* UINavigationController+PopGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PopGesture.m"; sourceTree = "<group>"; };
+		AE51C25420A43F0000FE7535 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AE521F4120A934EA000EB31C /* FilesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilesHeader.h; sourceTree = "<group>"; };
+		AE521F4220A9367D000EB31C /* MainTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		AE521F4320A9367D000EB31C /* MainTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		AE521F4920A93AF6000EB31C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		AE521F4A20A93AF6000EB31C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AE521F4C20A93B03000EB31C /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		AE521F4D20A93B03000EB31C /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		AE521F4F20A93B0C000EB31C /* DownLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		AE521F5020A93B0C000EB31C /* DownLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		AE521F5220A93E1E000EB31C /* TabbarItems.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabbarItems.plist; sourceTree = "<group>"; };
+		AE521F5720A95A98000EB31C /* LYPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPlayerView.h; sourceTree = "<group>"; };
+		AE521F5820A95A98000EB31C /* LYPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPlayerView.m; sourceTree = "<group>"; };
+		AE521F5A20A961B8000EB31C /* LYPlayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPlayerModel.h; sourceTree = "<group>"; };
+		AE521F5B20A961B8000EB31C /* LYPlayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPlayerModel.m; sourceTree = "<group>"; };
+		AE521F5D20A964B6000EB31C /* LYPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LYPlayer.bundle; sourceTree = "<group>"; };
+		AE521F5F20A96545000EB31C /* LYPlayerConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPlayerConfiguration.h; sourceTree = "<group>"; };
+		AE521F6020A96762000EB31C /* LYPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPlayer.h; sourceTree = "<group>"; };
+		AE5769F020EB412000C494E3 /* LYPlayerControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPlayerControlView.h; sourceTree = "<group>"; };
+		AE5769F120EB412000C494E3 /* LYPlayerControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPlayerControlView.m; sourceTree = "<group>"; };
+		AE5769F320EB7C1F00C494E3 /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		AE5769F420EB7C1F00C494E3 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		C91A5530FA21E1416E3AC254 /* Pods-LYPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYPlayer/Pods-LYPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		EA969F565AC971D5845BC335 /* Pods-LYPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYPlayer/Pods-LYPlayer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE51C22A20A437BF00FE7535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186E8E71582617B7ECFD29F5 /* libPods-LYPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F28CD404DA595F1872E4EF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D5A7B619C0F27A3DAEC123D /* libPods-LYPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B37DC419B4B327E32A74F90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C91A5530FA21E1416E3AC254 /* Pods-LYPlayer.debug.xcconfig */,
+				EA969F565AC971D5845BC335 /* Pods-LYPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE51C22420A437BF00FE7535 = {
+			isa = PBXGroup;
+			children = (
+				AE51C22F20A437BF00FE7535 /* LYPlayer */,
+				AE51C22E20A437BF00FE7535 /* Products */,
+				4B37DC419B4B327E32A74F90 /* Pods */,
+				3F28CD404DA595F1872E4EF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE51C22E20A437BF00FE7535 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE51C22D20A437BF00FE7535 /* LYPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE51C22F20A437BF00FE7535 /* LYPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AE521F5520A958DD000EB31C /* Tool */,
+				AE51C24620A4390E00FE7535 /* AppDelegate */,
+				AE51C24F20A4398500FE7535 /* BaseClass */,
+				AE521F4520A93ABD000EB31C /* MainClass */,
+				AE51C25320A43EE400FE7535 /* HeaderFiles */,
+				AE51C23620A437BF00FE7535 /* Main.storyboard */,
+				AE51C23920A437C100FE7535 /* Assets.xcassets */,
+				AE51C23B20A437C100FE7535 /* LaunchScreen.storyboard */,
+				AE51C24B20A4391400FE7535 /* Info.plist */,
+				AE51C24C20A4391400FE7535 /* main.m */,
+			);
+			path = LYPlayer;
+			sourceTree = "<group>";
+		};
+		AE51C24620A4390E00FE7535 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AE51C24720A4390E00FE7535 /* AppDelegate.h */,
+				AE51C24820A4390E00FE7535 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AE51C24F20A4398500FE7535 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				AE51C25020A43B0700FE7535 /* UINavigationController+PopGesture.h */,
+				AE51C25120A43B0700FE7535 /* UINavigationController+PopGesture.m */,
+				AE1D6D1820EC9C260009B8E7 /* UIViewController+Rotation.h */,
+				AE1D6D1920EC9C260009B8E7 /* UIViewController+Rotation.m */,
+				AE1D6D1B20ECB4F20009B8E7 /* UIView+Category.h */,
+				AE1D6D1C20ECB4F20009B8E7 /* UIView+Category.m */,
+				AE521F4220A9367D000EB31C /* MainTabBarViewController.h */,
+				AE521F4320A9367D000EB31C /* MainTabBarViewController.m */,
+				AE521F5220A93E1E000EB31C /* TabbarItems.plist */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		AE51C25320A43EE400FE7535 /* HeaderFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AE51C25420A43F0000FE7535 /* PrefixHeader.pch */,
+				AE521F4120A934EA000EB31C /* FilesHeader.h */,
+			);
+			path = HeaderFiles;
+			sourceTree = "<group>";
+		};
+		AE521F4520A93ABD000EB31C /* MainClass */ = {
+			isa = PBXGroup;
+			children = (
+				AE521F4820A93AE5000EB31C /* DownLoad */,
+				AE521F4720A93ADC000EB31C /* Discover */,
+				AE521F4620A93AD4000EB31C /* Home */,
+			);
+			path = MainClass;
+			sourceTree = "<group>";
+		};
+		AE521F4620A93AD4000EB31C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AE521F4920A93AF6000EB31C /* HomeViewController.h */,
+				AE521F4A20A93AF6000EB31C /* HomeViewController.m */,
+				AE5769F320EB7C1F00C494E3 /* PlayerViewController.h */,
+				AE5769F420EB7C1F00C494E3 /* PlayerViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AE521F4720A93ADC000EB31C /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				AE521F4C20A93B03000EB31C /* DiscoverViewController.h */,
+				AE521F4D20A93B03000EB31C /* DiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		AE521F4820A93AE5000EB31C /* DownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				AE521F4F20A93B0C000EB31C /* DownLoadViewController.h */,
+				AE521F5020A93B0C000EB31C /* DownLoadViewController.m */,
+			);
+			path = DownLoad;
+			sourceTree = "<group>";
+		};
+		AE521F5520A958DD000EB31C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				AE521F5620A958E8000EB31C /* Player */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		AE521F5620A958E8000EB31C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				AE521F6020A96762000EB31C /* LYPlayer.h */,
+				AE521F5F20A96545000EB31C /* LYPlayerConfiguration.h */,
+				AE521F5A20A961B8000EB31C /* LYPlayerModel.h */,
+				AE521F5B20A961B8000EB31C /* LYPlayerModel.m */,
+				AE521F5720A95A98000EB31C /* LYPlayerView.h */,
+				AE521F5820A95A98000EB31C /* LYPlayerView.m */,
+				AE5769F020EB412000C494E3 /* LYPlayerControlView.h */,
+				AE5769F120EB412000C494E3 /* LYPlayerControlView.m */,
+				AE521F5D20A964B6000EB31C /* LYPlayer.bundle */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE51C22C20A437BF00FE7535 /* LYPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE51C24320A437C100FE7535 /* Build configuration list for PBXNativeTarget "LYPlayer" */;
+			buildPhases = (
+				11254ED2EDCDE297DBFB7CA5 /* [CP] Check Pods Manifest.lock */,
+				AE51C22920A437BF00FE7535 /* Sources */,
+				AE51C22A20A437BF00FE7535 /* Frameworks */,
+				AE51C22B20A437BF00FE7535 /* Resources */,
+				2DF260BD45E68F5C2D2C5FDE /* [CP] Embed Pods Frameworks */,
+				D3D5E6E73AF4DC8A99CAE19D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYPlayer;
+			productName = LYPlayer;
+			productReference = AE51C22D20A437BF00FE7535 /* LYPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE51C22520A437BF00FE7535 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = yun;
+				TargetAttributes = {
+					AE51C22C20A437BF00FE7535 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = AE51C22820A437BF00FE7535 /* Build configuration list for PBXProject "LYPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE51C22420A437BF00FE7535;
+			productRefGroup = AE51C22E20A437BF00FE7535 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE51C22C20A437BF00FE7535 /* LYPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE51C22B20A437BF00FE7535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE51C24D20A4391400FE7535 /* Info.plist in Resources */,
+				AE521F5320A93E1E000EB31C /* TabbarItems.plist in Resources */,
+				AE51C23D20A437C100FE7535 /* LaunchScreen.storyboard in Resources */,
+				AE51C23A20A437C100FE7535 /* Assets.xcassets in Resources */,
+				AE51C23820A437BF00FE7535 /* Main.storyboard in Resources */,
+				AE521F5E20A964B6000EB31C /* LYPlayer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11254ED2EDCDE297DBFB7CA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DF260BD45E68F5C2D2C5FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYPlayer/Pods-LYPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D5E6E73AF4DC8A99CAE19D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYPlayer/Pods-LYPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE51C22920A437BF00FE7535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE521F5120A93B0C000EB31C /* DownLoadViewController.m in Sources */,
+				AE521F5C20A961B8000EB31C /* LYPlayerModel.m in Sources */,
+				AE51C24E20A4391400FE7535 /* main.m in Sources */,
+				AE521F4E20A93B03000EB31C /* DiscoverViewController.m in Sources */,
+				AE5769F220EB412000C494E3 /* LYPlayerControlView.m in Sources */,
+				AE521F4420A9367D000EB31C /* MainTabBarViewController.m in Sources */,
+				AE1D6D1D20ECB4F20009B8E7 /* UIView+Category.m in Sources */,
+				AE1D6D1A20EC9C260009B8E7 /* UIViewController+Rotation.m in Sources */,
+				AE51C24920A4390E00FE7535 /* AppDelegate.m in Sources */,
+				AE521F4B20A93AF6000EB31C /* HomeViewController.m in Sources */,
+				AE521F5920A95A98000EB31C /* LYPlayerView.m in Sources */,
+				AE5769F520EB7C1F00C494E3 /* PlayerViewController.m in Sources */,
+				AE51C25220A43B0700FE7535 /* UINavigationController+PopGesture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE51C23620A437BF00FE7535 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE51C23720A437BF00FE7535 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE51C23B20A437C100FE7535 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE51C23C20A437C100FE7535 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE51C24120A437C100FE7535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE51C24220A437C100FE7535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE51C24420A437C100FE7535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91A5530FA21E1416E3AC254 /* Pods-LYPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HWBUBH5R9L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LYPlayer/HeaderFiles/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/LYPlayer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yun.MyProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE51C24520A437C100FE7535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA969F565AC971D5845BC335 /* Pods-LYPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HWBUBH5R9L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LYPlayer/HeaderFiles/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/LYPlayer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yun.MyProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE51C22820A437BF00FE7535 /* Build configuration list for PBXProject "LYPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE51C24120A437C100FE7535 /* Debug */,
+				AE51C24220A437C100FE7535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE51C24320A437C100FE7535 /* Build configuration list for PBXNativeTarget "LYPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE51C24420A437C100FE7535 /* Debug */,
+				AE51C24520A437C100FE7535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE51C22520A437BF00FE7535 /* Project object */;
+}

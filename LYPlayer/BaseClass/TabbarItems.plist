@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   TabbarItems.plist
+   LYPlayer
+
+   Created by yun on 2018/5/14.
+   Copyright (c) 2018年 yun. All rights reserved.
+-->
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>controller</key>
+            <string>HomeViewController</string>
+            <key>title</key>
+            <string>首页</string>
+            <key>image</key>
+            <string>home_g</string>
+            <key>selectedImage</key>
+            <string>home</string>
+        </dict>
+        <dict>
+            <key>controller</key>
+            <string>DiscoverViewController</string>
+            <key>title</key>
+            <string>发现</string>
+            <key>image</key>
+            <string>discover_g</string>
+            <key>selectedImage</key>
+            <string>discover</string>
+        </dict>
+        <dict>
+            <key>controller</key>
+            <string>DownLoadViewController</string>
+            <key>title</key>
+            <string>下载</string>
+            <key>image</key>
+            <string>down_g</string>
+            <key>selectedImage</key>
+            <string>down</string>
+        </dict>
+    </array>
+</plist>
