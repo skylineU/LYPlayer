@@ -18,8 +18,8 @@ typedef NS_ENUM(NSInteger,LYPlayerState) {
     LYPlayerStateFail,      // 播放失败
     LYPlayerStateBuffering, // 缓冲中
     LYPlayerStatePlaying,   // 播放中
-    LYPlayerStateStopped,   // 停止播放
-    LYPlayerStatePause      // 暂停播放
+    LYPlayerStatePause,     // 暂停播放
+    LYPlayerStateStopped    // 停止播放
 };
 
 @protocol LYPlayerViewDelegate <NSObject>

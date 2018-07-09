@@ -16,6 +16,8 @@ typedef NS_ENUM(NSInteger,LYPlayerBackMode) {
 
 @protocol LYPlayerControlViewDelegate <NSObject>
 
+@optional
+
 // 返回
 - (void)ly_playerBackWithBackMode:(LYPlayerBackMode)backMode;
 // 播放按钮
@@ -26,9 +28,6 @@ typedef NS_ENUM(NSInteger,LYPlayerBackMode) {
 - (void)ly_playerSliderValueChange:(UISlider *)slider;
 // slider滑动结束事件
 - (void)ly_playerSliderTouchEnded:(UISlider *)slider;
-
-@optional
-
 
 
 @end
@@ -56,6 +55,11 @@ typedef NS_ENUM(NSInteger,LYPlayerBackMode) {
  * 显示控制层
  */
 - (void)ly_playerShowControlView;
+
+/**
+ * 重置播放器
+ */
+- (void)resetConfig;
 
 
 @end

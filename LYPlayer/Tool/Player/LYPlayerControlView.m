@@ -208,7 +208,7 @@
     self.slider.value = 0;
     
     /// 状态赋值
-
+    self.playPauseButton.selected = NO;
 }
 
 

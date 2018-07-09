@@ -148,8 +148,8 @@
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationChange) name:UIDeviceOrientationDidChangeNotification object:nil];
 
-    // 状态栏方向
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    // playerItem播放结束
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:self.playerItem];
     
 }
 
@@ -215,20 +215,22 @@
 
 
 #pragma mark -- 播放、暂停
-
+/**
+ * [self.player replaceCurrentItemWithPlayerItem:self.playerItem];这个方法只能用其他item来替换，原item替换无效
+ */
 - (void)play{
-    [self.controlView ly_setPlayerPlayButtonStatus:YES];
-    if (_state == LYPlayerStatePause) {
-        self.state = LYPlayerStatePlaying;
+    if (self.state == LYPlayerStateStopped) {// 播放完毕
+        // 重新播放
+        [self.player seekToTime:CMTimeMake(0, 1)];
     }
+    [self.controlView ly_setPlayerPlayButtonStatus:YES];
+    self.state = LYPlayerStatePlaying;
     [_player play];
 }
 
 - (void)pause{
     [self.controlView ly_setPlayerPlayButtonStatus:NO];
-    if (_state == LYPlayerStatePlaying) {
-        self.state = LYPlayerStatePause;
-    }
+    self.state = LYPlayerStatePause;
     [_player pause];
 }
 
@@ -278,6 +280,11 @@
     
 }
 
+- (void)playerItemDidEnd:(NSNotification *)note{
+    self.state = LYPlayerStateStopped;
+    // 控制层重置
+    [self.controlView resetConfig];
+}
 
 /**
  * 屏幕方向改变
@@ -323,16 +330,6 @@
     }
     
     
-}
-
-
-
-// 状态栏方向改变
-- (void)statusBarOrientationChange{
-//    if (!self.isEnterBackgroud) {
-//        UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-//        
-//    }
 }
 
 
@@ -439,6 +436,8 @@
         [self.player seekToTime:cmt toleranceBefore:CMTimeMake(1, 1) toleranceAfter:CMTimeMake(1, 1) completionHandler:^(BOOL finished) {
             __strong typeof(wSelf) sSwlf = wSelf;
             [sSwlf.player play];
+            // 保证播放按钮一致
+            [sSwlf.controlView ly_setPlayerPlayButtonStatus:YES];
         }];
 
     } else {
